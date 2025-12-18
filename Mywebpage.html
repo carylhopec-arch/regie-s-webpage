@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Website</title>
+
+<style>
+/*Gradient Purple Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3e8ff, #e9d5ff, #ddd6fe);
+}
+
+/*Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(139,92,246,0.4);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fce7ff;
+}
+
+/*Main Card */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(139,92,246,0.25);
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+/*Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #6d28d9;
+    margin-bottom: 10px;
+}
+
+/*Profile Image */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e9d5ff;
+    box-shadow: 0 6px 15px rgba(167,139,250,0.35);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/*Info */
+.info p {
+    font-size: 18px;
+    margin: 6px 0;
+    color: #4c1d95;
+}
+
+/*Quote */
+.quote {
+    margin-top: 25px;
+    font-style: italic;
+    color: #7c3aed;
+    font-size: 17px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="Mywebpage.html">Home</a>
+    <a href="My autobiography.html">Autobiography</a>
+    <a href="my gallery.html">Gallery</a>
+    <a href="myvideo.html">Videos</a>
+    <a href="my song.html">Songs</a>
+</nav>
+
+<div class="container">
+    <img src="profilepic.jpg" alt="Profile Picture" class="profile-img">
+
+    <h1>Regie Villamor Magnifico</h1>
+
+    <div class="info">
+        <p><strong>Year:</strong> 4th Year</p>
+        <p><strong>Section:</strong> BIT major in CT Section T</p>
+    </div>
+
+    <p class="quote">
+        “Growth begins the moment you choose to believe in the person you are becoming.”
+    </p>
+</div>
+
+</body>
+</html>
